@@ -10,6 +10,7 @@ jobs:
             steps:
 
                 - uses: actions/checkout@v4
+                - run: terraform init
                 - run: terraform plan
                 - run: 
                     echo Se ha ejecutado un terraform plan
